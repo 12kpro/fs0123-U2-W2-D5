@@ -9350,20 +9350,32 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/*
 .slider {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-
-    .slider-item {
-      flex: 0 0 auto;
-    }
-  }
-*/
-.carousel img:hover {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+}
+.slider::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+.slider::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+.slider::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: 2px solid #555555;
+}
+.slider .slider-item {
+  flex: 0 0 auto;
   transition: transform 0.3s;
-  transform: scale(1.2);
+}
+.slider .slider-item:hover {
+  transition: transform 0.3s;
+  transform: scale(1.05);
 }
 
 footer a {

@@ -1,19 +1,43 @@
 @import "./custom/bootstrap";
-/*
+
+body{
+  
+}
 .slider {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-  
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: #F5F5F5;
+    }
+    
+    &::-webkit-scrollbar
+    {
+      width: 5px;
+      background-color: #F5F5F5;
+    }
+    
+    &::-webkit-scrollbar-thumb
+    {
+      background-color: #000000;
+      border: 2px solid #555555;
+    }  
     .slider-item {
       flex: 0 0 auto;
+      transition: transform .3s;
+      &:hover{
+        transition: transform .3s;
+        transform: scale(1.05);
+      }
     }
   }
-*/
-.carousel img:hover {
-    transition: transform .3s;
-    transform: scale(1.2);
-  }
+
+
+
 
 footer{
     a {
