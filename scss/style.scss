@@ -1,31 +1,40 @@
 @import "./custom/bootstrap";
 
-body{
-  
+html {
+  --scrollbarBG: #CFD8DC;
+  --thumbBG: #90A4AE;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
 }
 .slider {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    scrollbar-width: thin;
-    &::-webkit-scrollbar-track
-    {
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-      background-color: #F5F5F5;
+    &::-webkit-scrollbar {
+      width:30px; // manage scrollbar width here
+      height: 5px;
     }
-    
-    &::-webkit-scrollbar
-    {
-      width: 5px;
-      background-color: #F5F5F5;
+    &::-webkit-scrollbar * {
+      background:transparent; // manage scrollbar background color here
     }
-    
-    &::-webkit-scrollbar-thumb
-    {
-      background-color: #000000;
-      border: 2px solid #555555;
-    }  
+    &::-webkit-scrollbar-thumb {
+      background:rgba(229, 9, 20,0.5) !important; // manage scrollbar thumb background color here
+    }
+
     .slider-item {
       flex: 0 0 auto;
       transition: transform .3s;
@@ -35,9 +44,6 @@ body{
       }
     }
   }
-
-
-
 
 footer{
     a {
@@ -49,5 +55,4 @@ footer{
             color: #565e64 !important;
           }
     }
-
 }
