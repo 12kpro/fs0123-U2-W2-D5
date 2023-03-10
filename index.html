@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body class="text-bg-dark">
+<header class="mb-3">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/netflix_logo.png" height="40px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 link-light">
+                  <li class="nav-item">
+                    <a class="nav-link link-secondary" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-secondary" href="#">TV Shows</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-secondary" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item" href="#">
+                    <a class="nav-link link-secondary">Recently Added</a>
+                  </li>
+                  <li class="nav-item" href="#">
+                    <a class="nav-link link-secondary">My List</a>
+                  </li>
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link link-secondary" href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-secondary fw-bold" href="#">KIDS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-secondary" href="#">
+                        <i class="fa-sharp fa-solid fa-bell"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle link-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="img-fluid" src="assets/images/avatar.png" height="20px" width="20px">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="profile.html">Profilo</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="settings.html">Impostazioni</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <h2 class="flex-shrink-0 me-5">
+                        TV Show
+                    </h2> 
+                    <select class="form-select bg-dark text-secondary">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </form>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-secondary">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+                <button type="button" class="btn btn-outline-secondary">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                </button>
+              </div>
+            </div>
+          </nav>
+</header>
+    <main class="container-fluid mb-5">
+        <section id="trending" class="mb-4">
+            <div class="d-flex justify-content-between mb-3">
+                <h2 class="flex-grow-1  fs-3">Trending Now</h2>
+            </div>
+
+            <div id="carouselTrending" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-fluid mt-3">
+                        <div class="row row-cols-6 justify-content-center g-2">
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>                                                                                                                                                                                    
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-fluid mt-3">
+                        <div class="row row-cols-6 justify-content-center g-1">
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>                                                                                                                                                                                    
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-fluid mt-3">
+                        <div class="row row-cols-6 justify-content-center g-1">
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="assets/images/media/media0.webp">
+                            </div>                                                                                                                                                                                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrending" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTrending" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+
+        </section>
+        <section id="watch-again" class="mb-4">
+            <div class="d-flex justify-content-between mb-3">
+                <h2 class="flex-grow-1  fs-3">Watch It Again</h2>
+            </div>
+            <div id="carouselWatchAgain" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid mt-3">
+                            <div class="row row-cols-6 justify-content-center g-2">
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>                                                                                                                                                                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid mt-3">
+                            <div class="row row-cols-6 justify-content-center g-1">
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>                                                                                                                                                                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid mt-3">
+                            <div class="row row-cols-6 justify-content-center g-1">
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>                                                                                                                                                                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselWatchAgain" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselWatchAgain" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>            
+        </section>
+        <section id="new-release" class="mb-4">
+            <div class="d-flex justify-content-between mb-3">
+                <h2 class="flex-grow-1  fs-3">New Releases</h2>
+            </div>
+            <div id="carouselNewRelease" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid mt-3">
+                            <div class="row row-cols-6 justify-content-center g-2">
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>                                                                                                                                                                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid mt-3">
+                            <div class="row row-cols-6 justify-content-center g-1">
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>                                                                                                                                                                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid mt-3">
+                            <div class="row row-cols-6 justify-content-center g-1">
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid" src="assets/images/media/media0.webp">
+                                </div>                                                                                                                                                                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNewRelease" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselNewRelease" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>            
+        </section>
+    </main>
+    <footer class="container text-secondary">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="fs-2">
+                        <a class="me-2" href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a class="me-2" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="me-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="me-2" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-3">
+                    <div class="d-flex flex-column">
+                        <a href="#">Audio and Subtitles</a>
+                        <a href="#">Media Center</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="d-flex flex-column">
+                        <a href="#">Audio Description</a>
+                        <a href="#">Investor Relations</a>
+                        <a href="#">Legal Notices</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="d-flex flex-column">
+                        <a href="#">Help Center</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Cookie Preferences</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="d-flex flex-column">
+                        <a href="#">Gift Cards</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Corporate Information</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <button class="btn btn-outline-secondary btn-sm">Service Code</button>
+                </div>
+            </div>                
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy 1997-2019 Netflix, Inc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+   /*     const movies = [
+    'media0.webp',  'media1.jpg',   'media10.jpg',
+    'media11.jpg',  'media12.jpg',  'media13.jpg',
+    'media14.webp', 'media15.jpg',  'media16.webp',
+    'media17.jpg',  'media18.jpg',  'media19.webp',
+    'media2.webp',  'media20.jpg',  'media21.webp',
+    'media22.webp', 'media23.webp', 'media24.jpg',
+    'media25.webp', 'media26.webp', 'media27.jpg',
+    'media28.jpg',  'media29.jpg',  'media3.webp',
+    'media30.jpg',  'media31.webp', 'media32.jpg',
+    'media4.jpg',   'media5.webp',  'media6.jpg',
+    'media7.webp',  'media8.webp',  'media9.jpg'
+  ]
+  const tpl = (img)=>`<img class="slider-item" src="assets/images/media/${img}">`
+
+      document.addEventListener('DOMContentLoaded', (event) => {
+        let trendingCtn = document.querySelector('#trending .slider')
+        //let mostPopularCtn = document.querySelector('#carouselPopular .carousel-inner')
+        //let trendingCtn    = document.querySelector('#carouselTrending .carousel-inner')
+
+        for (let [i, movie] of movies.entries()) {
+          //let first = i === 0 ? true : false
+          //let card = cardTpl (c.title, c.image, c.timeRead, c.level , c.price, c.priced, c.author.thumb, c.author.name, first)
+          
+          //reccomendedCtn.insertAdjacentHTML('beforeend', card);
+          //mostPopularCtn.insertAdjacentHTML('beforeend', card);
+          trendingCtn.insertAdjacentHTML('beforeend', tpl(movie));
+        }
+
+      })
+*/
+
+    </script>
+  </body>
+</html>

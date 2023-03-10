@@ -1,0 +1,29 @@
+@import "./custom/bootstrap";
+/*
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  
+    .slider-item {
+      flex: 0 0 auto;
+    }
+  }
+*/
+.carousel img:hover {
+    transition: transform .3s;
+    transform: scale(1.2);
+  }
+
+footer{
+    a {
+        text-decoration: none;
+        color: $secondary;
+        margin-bottom: 1rem;
+        &:hover,
+        &:focus {
+            color: #565e64 !important;
+          }
+    }
+
+}
