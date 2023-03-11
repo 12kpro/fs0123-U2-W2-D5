@@ -9377,18 +9377,28 @@ body::-webkit-scrollbar-thumb {
 .slider {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  overflow-x: overlay;
   overflow-y: hidden;
+  /*
+  &::-webkit-scrollbar * {
+    background: $scrollbar-bg; // manage scrollbar background color here
+  }
+  */
 }
 .slider::-webkit-scrollbar {
-  width: 30px;
-  height: 5px;
+  height: 16px;
 }
-.slider::-webkit-scrollbar * {
-  background: transparent;
+.slider::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+.slider::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
 }
 .slider::-webkit-scrollbar-thumb {
-  background: rgba(229, 9, 20, 0.5) !important;
+  background: rgba(0, 0, 0, 0);
+  border: 5px solid transparent;
+  border-radius: 24px;
+  box-shadow: 4px 0px 0px 4px rgba(229, 9, 20, 0.5019607843) inset;
 }
 .slider .slider-item {
   flex: 0 0 auto;
