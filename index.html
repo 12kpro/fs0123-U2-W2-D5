@@ -92,19 +92,19 @@
             <div class=" d-flex justify-content-between mb-3">
                 <h2 class="flex-grow-1  fs-3">Trending Now</h2>
             </div>
-            <div class="slider py-2 ps-2"></div>
+            <div class="slider d-flex flex-nowrap"></div>
         </section>
         <section id="watch-again" class="mb-4">
             <div class="d-flex justify-content-between mb-3">
                 <h2 class="flex-grow-1  fs-3">Watch It Again</h2>
             </div>
-            <div class="slider py-2 ms-2"></div>
+            <div class="slider d-flex flex-nowrap"></div>
         </section>
         <section id="new-release" class="mb-4">
             <div class="d-flex justify-content-between mb-3">
                 <h2 class="flex-grow-1  fs-3">New Releases</h2>
             </div>
-            <div class="slider py-2 ms-2"></div>
+            <div class="slider d-flex flex-nowrap"></div>
         </section>
     </main>
     <footer class="container text-secondary">
@@ -182,11 +182,11 @@ const movies = [
     'media4.jpg',   'media5.webp',  'media6.jpg',
     'media7.webp',  'media8.webp',  'media9.jpg'
   ]
-const tpl = (img)=>`<a href="#" class="slider-item pe-2"><img class="img-fluid" src="assets/images/media/${img}"></a>`
+const tpl = (img)=>`<a href="#" class="slider-item me-1"><img class="img-fluid" src="assets/images/media/${img}"></a>`
 
 function createSlider(ctn){
 
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 20; i++) {
         let rand = Math.floor(Math.random()*movies.length)  
         let slideitem = tpl(movies[rand])
 
@@ -198,19 +198,13 @@ function createSlider(ctn){
         ctn.scrollLeft += e.deltaY;
     });
 }
-function sliderCarousel(){
-  setInterval(() => {
-    
-  }, 1000);
-}
+
 document.addEventListener('DOMContentLoaded', (event) => {
         let sliders = document.querySelectorAll('.slider')
 
         for (let slider of sliders) {
           createSlider(slider)
         }
-        let sliderItem = document.querySelector(".slider >a")
-        console.log(sliderItem.offsetWidth);
 })
 
     </script>
