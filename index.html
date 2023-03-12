@@ -10,7 +10,7 @@
   <body class="text-bg-dark">
 <header class="mb-3">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <div class="container-fluid px-5">
               <a class="navbar-brand" href="#">
                 <img src="assets/images/netflix_logo.png" height="40px">
               </a>
@@ -50,7 +50,7 @@
                       </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle link-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle link-secondary pe-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img class="img-fluid" src="assets/images/avatar.png" height="20px" width="20px">
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
@@ -64,12 +64,12 @@
             </div>
         </nav>
         <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid">
+            <div class="container-fluid px-5">
                 <form class="d-flex" role="search">
                     <h2 class="flex-shrink-0 me-5">
                         TV Show
                     </h2> 
-                    <select class="form-select bg-dark text-secondary">
+                    <select class="form-select bg-dark text-secondary rounded-0">
                         <option selected>Open this select menu</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -77,36 +77,34 @@
                     </select>
                 </form>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-outline-secondary">
+                <button type="button" class="btn btn-outline-secondary rounded-0">
                     <i class="fa-solid fa-bars-staggered"></i>
                 </button>
-                <button type="button" class="btn btn-outline-secondary">
+                <button type="button" class="btn btn-outline-secondary rounded-0">
                     <i class="fa-solid fa-table-cells-large"></i>
                 </button>
               </div>
             </div>
           </nav>
 </header>
-    <main class="container-fluid mb-5">
+    <main class="container-fluid px-5">
         <section id="trending" class="mb-4">
-            <div class="d-flex justify-content-between mb-3">
+            <div class=" d-flex justify-content-between mb-3">
                 <h2 class="flex-grow-1  fs-3">Trending Now</h2>
             </div>
-            <div class="slider py-2"></div>
-
-
+            <div class="slider py-2 ps-2"></div>
         </section>
         <section id="watch-again" class="mb-4">
             <div class="d-flex justify-content-between mb-3">
                 <h2 class="flex-grow-1  fs-3">Watch It Again</h2>
             </div>
-            <div class="slider py-2"></div>
+            <div class="slider py-2 ms-2"></div>
         </section>
         <section id="new-release" class="mb-4">
             <div class="d-flex justify-content-between mb-3">
                 <h2 class="flex-grow-1  fs-3">New Releases</h2>
             </div>
-            <div class="slider py-2"></div>
+            <div class="slider py-2 ms-2"></div>
         </section>
     </main>
     <footer class="container text-secondary">
@@ -184,7 +182,7 @@ const movies = [
     'media4.jpg',   'media5.webp',  'media6.jpg',
     'media7.webp',  'media8.webp',  'media9.jpg'
   ]
-const tpl = (img)=>`<img class="slider-item img-fluid pe-2" src="assets/images/media/${img}">`
+const tpl = (img)=>`<a href="#" class="slider-item pe-2"><img class="img-fluid" src="assets/images/media/${img}"></a>`
 
 function createSlider(ctn){
 
@@ -200,13 +198,19 @@ function createSlider(ctn){
         ctn.scrollLeft += e.deltaY;
     });
 }
-
+function sliderCarousel(){
+  setInterval(() => {
+    
+  }, 1000);
+}
 document.addEventListener('DOMContentLoaded', (event) => {
         let sliders = document.querySelectorAll('.slider')
 
         for (let slider of sliders) {
           createSlider(slider)
         }
+        let sliderItem = document.querySelector(".slider >a")
+        console.log(sliderItem.offsetWidth);
 })
 
     </script>
