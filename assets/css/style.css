@@ -9350,8 +9350,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  --scrollbarBG: #CFD8DC;
+  --thumbBG: #90A4AE;
+}
+
 body::-webkit-scrollbar {
-  width: 5px;
+  width: 11px;
 }
 
 body::-webkit-scrollbar-track {
@@ -9360,6 +9365,8 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: rgba(229, 9, 20, 0.5019607843);
+  border-radius: 6px;
+  border: 3px solid rgba(0, 0, 0, 0);
 }
 
 .slider {
@@ -9367,19 +9374,11 @@ body::-webkit-scrollbar-thumb {
   overflow-x: overlay;
   overflow-y: hidden;
   margin-right: -3rem;
-  /*
-  &::-webkit-scrollbar * {
-    background: $scrollbar-bg; // manage scrollbar background color here
-  }
-  */
 }
 .slider::-webkit-scrollbar {
   height: 5px;
 }
 .slider::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0);
-}
-.slider::-webkit-scrollbar-track-piece {
   background-color: rgba(0, 0, 0, 0);
 }
 .slider::-webkit-scrollbar-thumb {
